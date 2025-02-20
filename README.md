@@ -3,10 +3,10 @@
 ## Required packages
 The following is the required package and programs
 
-python
-scikit-learn
-numpy
-pytorch
+python  
+scikit-learn  
+numpy  
+pytorch  
 
 ## scripts
 
