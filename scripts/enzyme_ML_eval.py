@@ -1,14 +1,10 @@
-# construct a final model
-# python model_construction_linr.py spearman Umetsu_GFP_BLOSUM.csv Umetsu_GFP_BLOSUM
-
 import sys
 import csv
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import KFold
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import KFold,train_test_split
 from sklearn.metrics import make_scorer,r2_score, mean_squared_error
 from scipy.stats import spearmanr, pearsonr
 from scipy.optimize import curve_fit
