@@ -10,6 +10,12 @@ The following is the required package and programs
 
 ## scripts
 ~~~
-python3 binding_single_SVR_RFR_bind_fold.py --res_number residue_number --model_type model_type(svr or rfr) --function_type function_type (binding or abundance) --n_estimaters n_estimaters(optional) --metric spearman --sequence_embedding amino_acid_embedding --dataset dataset --outputfile output_filename  --split_data_b 1 --split_data_e 100
+python3 single_ML_eval.py --res_number residue_number --model_type model_type(svr or rfr) --function_type function_type (binding or abundance) --C float(if model_type=svr) --gamma float(if model_type=svr) --epsilon float(if model_type=svr) --n_estimaters int(if model_type=rfr) --metric metric --sequence_embedding amino_acid_embedding --dataset dataset --outputfile output_filename  --split_data_b int --split_data_e int
+~~~
+~~~
+python3 double_ML_eval.py --res_number residue_number --model_type model_type(svr or rfr) --function_type function_type (binding or abundance) --C float(if model_type=svr) --gamma float(if model_type=svr) --epsilon float(if model_type=svr) --n_estimaters int(if model_type=rfr) --metric metric --sequence_embedding amino_acid_embedding --dataset dataset --test_sequence_embedding sequence_embedding(double residue dataset) --test_dataset dataset(double residue dataset) --outputfile output_filename  --split_data_b int --split_data_e int
+~~~
+~~~
+python3 enzyme_ML_eval.py --res_number residue_number --model_type model_type(svr or rfr) --function_type function_type (binding or abundance) --C float(if model_type=svr) --gamma float(if model_type=svr) --epsilon float(if model_type=svr) --n_estimaters int(if model_type=rfr) --metric metric --sequence_embedding amino_acid_embedding --dataset dataset --outputfile output_filename  --split_data_b int --split_data_e int
 ~~~
 
