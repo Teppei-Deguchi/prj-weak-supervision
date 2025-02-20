@@ -10,6 +10,6 @@ The following is the required package and programs
 
 ## scripts
 ~~~
-python ML_eval_single.py
+python3 binding_single_SVR_RFR_bind_fold.py --res_number residue_number --model_type model_type(svr or rfr) --function_type function_type (binding or abundance) --n_estimaters n_estimaters(optional) --metric spearman --sequence_embedding amino_acid_embedding --dataset dataset --outputfile output_filename  --split_data_b 1 --split_data_e 100
 ~~~
 
