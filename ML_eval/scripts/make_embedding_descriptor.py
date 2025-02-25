@@ -33,9 +33,8 @@ def main():
     parser.add_argument("--input_csv", type=str, required=True, help="Path to input CSV file")
     parser.add_argument("--output_pkl", type=str, required=True, help="Path to output pkl file")
     parser.add_argument("--feature_type", type=str, required=True, choices=["BLOSUM", "FASGAI", "MS-WHIM", 
-                                                                             "ProtFP-Feature", "ProtFP", 
-                                                                             "ST-scale", "T-scale", 
-                                                                             "VHSE-4", "VHSE", "Z-scale"], 
+                                                                             "ProtFP", "ST-scale", "T-scale", 
+                                                                             "VHSE", "Z-scale"], 
                         help="Feature type to use for encoding")
     args = parser.parse_args()
 
