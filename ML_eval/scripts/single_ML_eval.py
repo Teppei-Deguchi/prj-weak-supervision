@@ -73,7 +73,7 @@ def model_estimate(metric,y_exp_test,y_pred):
         s = spearmanr_metric(y_exp_test, y_pred)
     return s
 
-# calculation of ESM-2 zero-shot, rosetta, and hybrid functional calue
+# calculation of ESM-2 zero-shot, rosetta, and hybrid functional value
 def make_calc_functional_value(dataset_train1,dataset_train2,function_type,comp_value,i):
     F_calc_scale = np.array([])
     
