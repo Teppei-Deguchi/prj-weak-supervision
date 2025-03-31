@@ -1,5 +1,3 @@
-# construct a final model
-# python model_construction_linr.py spearman Umetsu_GFP_BLOSUM.csv Umetsu_GFP_BLOSUM
 
 import sys
 import csv
