@@ -1,18 +1,13 @@
 import sys
 import csv
 import numpy as np
-from sklearn.preprocessing import StandardScaler
-from sklearn.svm import SVR
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import KFold
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import make_scorer,r2_score, mean_squared_error
+from sklearn.model_selection import train_test_split
 from scipy.stats import spearmanr, pearsonr
-from scipy.optimize import curve_fit
 import pickle
 import torch
-import subprocess
 import argparse
+import subprocess
 import concurrent.futures
 import os
 
