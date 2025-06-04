@@ -24,7 +24,7 @@ python3 enzyme_ML_eval.py --res_number residue_number --model_type model_type(sv
 
 Make amino acid embedding
 ~~~
-python3 make_embedding_descriptor.py --input_csv input_filename --output_pkl output_filename --descriptor_type str #descriptor
+python3 make_embedding_descriptor.py --input_csv input_filename --output_pkl output_filename --feature_type str #descriptor
 python3 make_embedding_esm2.py --input_csv input_filename --output_pkl output_filename #ESM-2
 ~~~
 
