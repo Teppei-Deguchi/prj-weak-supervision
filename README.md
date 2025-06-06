@@ -15,7 +15,7 @@ python3 single_ML_eval.py --res_number residue_number --model_type model_type(sv
 ~~~
 Calculate model accuracy with double residue mutants. For binding affinity and protein abundance.
 ~~~
-python3 double_ML_eval.py --res_number residue_number --model_type model_type(svr or rfr) --function_type function_type(binding or abundance) --C float(if model_type=svr) --gamma float(if model_type=svr) --epsilon float(if model_type=svr) --n_estimaters int(if model_type=rfr) --metric metric --sequence_embedding amino_acid_embedding --dataset dataset(ML_eval/single/.csv) --test_sequence_embedding sequence_embedding(ML_eval/double/.csv) --test_dataset dataset(ML_eval/double/.csv) --outputfile output_filename  --split_data_b int --split_data_e int
+python3 double_ML_eval.py --res_number residue_number --model_type model_type(svr or rfr) --function_type function_type(binding or abundance) --C float(if model_type=svr) --gamma float(if model_type=svr) --epsilon float(if model_type=svr) --n_estimaters int(if model_type=rfr) --metric metric --sequence_embedding amino_acid_embedding --dataset dataset(ML_eval/single/.csv) --test_sequence_embedding test_amino_acid_embedding --test_dataset dataset(ML_eval/double/.csv) --outputfile output_filename  --split_data_b int --split_data_e int
 ~~~
 Calculate model accuracy on enzymatic activity
 ~~~
