@@ -1,4 +1,4 @@
-## Accuracy of ML model trained on computational data and compuutational data itself.
+## Accuracy of ML model trained on only computational data and computational data itself.
 Calculate accuracy of computational value, and ML model trained only conputationa data with single residue mutants.
 ~~~
 python3 calc_eval_single.py --res_number residue_number --model_type model_type(svr or rfr) --function_type function_type(binding or abundance) --C float(if model_type=svr) --gamma float(if model_type=svr) --epsilon float(if model_type=svr) --n_estimaters int(if model_type=rfr) --metric metric --sequence_embedding amino_acid_embedding --dataset dataset --outputfile output_filename
