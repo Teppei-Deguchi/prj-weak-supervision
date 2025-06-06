@@ -5,7 +5,7 @@ python3 calc_eval_single.py --res_number residue_number --model_type model_type(
 ~~~
 Calculate accuracy of computational value with double residue mutants.
 ~~~
-python3 calc_eval_double.py --res_number residue_number --function_type function_type(binding or abundance) --metric metric --test_dataset dataset(double residue dataset) --outputfile output_filename
+python3 calc_eval_double.py --res_number residue_number --function_type function_type(binding or abundance) --metric metric --test_dataset dataset(Rosetta_ESM-2_eval/double_calc_values/.csv) --outputfile output_filename
 ~~~
 Calculate accuracy of ML model trained only conputationa data with double residue mutants.
 ~~~
