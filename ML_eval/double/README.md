@@ -1,1 +1,1 @@
-Double redidue mutant dataset
+Double residue mutant dataset
