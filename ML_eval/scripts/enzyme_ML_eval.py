@@ -211,7 +211,7 @@ def compute(j,comp_value):
 
     y_test = dataset_test["activity"] 
 
-    for i in range(split_data_b,split_data_e):  
+    for i in range(split_data_b,split_data_e + 1):  
         exp_rate = i / 100 
         ddGf_rosetta_train = dataset_train["ddGf_rosetta"]
         ddGf_rosetta_train_scale = standardization(ddGf_rosetta_train)
