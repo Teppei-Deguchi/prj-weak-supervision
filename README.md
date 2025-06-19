@@ -21,11 +21,11 @@ Calculate model accuracy on enzymatic activity
 ~~~
 python3 enzyme_ML_eval.py --res_number residue_number --model_type model_type(svr or rfr) --function_type function_type (binding or abundance) --C float(if model_type=svr) --gamma float(if model_type=svr) --epsilon float(if model_type=svr) --n_estimaters int(if model_type=rfr) --metric metric --sequence_embedding amino_acid_embedding --dataset dataset(ML_eval/single/.csv) --outputfile output_filename  --split_data_b int --split_data_e int
 ~~~
+In ML calculation, n% of experimental training data is extracted, and 100-n% of experimental training data is replaced with calculated data. split_data_b and split_data_e specifies the rate n. The ML calculation is conducted with n in range of split_data_b <= n < split_data_e.
+
 
 Make amino acid embedding
 ~~~
 python3 make_embedding_descriptor.py --input_csv input_filename --output_pkl output_filename --feature_type str #descriptor
 python3 make_embedding_esm2.py --input_csv input_filename --output_pkl output_filename #ESM-2
 ~~~
-
-In the calculation, n% of experimental training data is extracted, and 100-n% of experimental training data is replaced with calculated data. split_data_b and split_data_e specifies the rate n. The ML calculation is conducted with n in range of split_data_b <= n < split_data_e.
