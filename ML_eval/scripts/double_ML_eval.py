@@ -253,7 +253,7 @@ def compute(j,comp_value):
     elif function_type == "abundance":
         y_test = dataset_test["Ff_exp"] 
 
-    for i in range(split_data_b,split_data_e):  
+    for i in range(split_data_b,split_data_e + 1):  
         exp_rate = i / 100 
         X_train1,X_train2,dataset_train1,dataset_train2 = train_test_split(X_train,dataset_train, test_size=exp_rate, random_state=random_state)
         F_calc_scale = make_calc_functional_value(dataset_train1,dataset_train2,function_type,comp_value,i)
