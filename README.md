@@ -28,3 +28,4 @@ python3 make_embedding_descriptor.py --input_csv input_filename --output_pkl out
 python3 make_embedding_esm2.py --input_csv input_filename --output_pkl output_filename #ESM-2
 ~~~
 
+In the calculation, n% of experimental training data is extracted, and 100-n% of experimental training data is replaced with calculated data. split_data_b and split_data_e specifies the rate n. The ML calculation is conducted with n in range of split_data_b <= n < split_data_e.
