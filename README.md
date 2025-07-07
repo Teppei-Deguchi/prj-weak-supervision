@@ -9,12 +9,13 @@ The following is the required package and programs
 * pytorch (2.5.1)  
 
 ## Scripts
-Make amino acid embedding
+### 1. Make amino acid embedding
 ~~~
 python3 make_embedding_descriptor.py --input_csv input_filename(ML_eval/single or double/.csv) --output_pkl output_filename(.pkl) --feature_type str #descriptor
 python3 make_embedding_esm2.py --input_csv input_filename(ML_eval/single or double/.csv) --output_pkl output_filename(.pkl) #ESM-2
 ~~~
 
+### 2. Conduct ML calculation
 Calculate model accuracy with single residue mutants. For binding affinity and protein abundance.
 ~~~
 python3 single_ML_eval.py --res_number protein_residue_length --model_type model_type(svr or rfr) --function_type function_type(binding or abundance) --C float(if model_type=svr) --gamma float(if model_type=svr) --epsilon float(if model_type=svr) --n_estimaters int(if model_type=rfr) --metric metric --sequence_embedding amino_acid_embedding(.pkl) --dataset dataset(ML_eval/single/.csv) --outputfile output_filename  --split_data_b int --split_data_e int
