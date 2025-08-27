@@ -6,6 +6,7 @@ import pickle
 import esm
 import os
 import pandas as pd
+import argparse
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3,4,5,6,7'
 model, alphabet = esm.pretrained.esm2_t6_8M_UR50D()
@@ -45,7 +46,7 @@ parser.add_argument("--input_csv", type=str, required=True, help="Path to input 
 parser.add_argument("--output_pkl", type=str, required=True, help="Path to output pkl file")
 args = parser.parse_args()
 
-data = process_alldata(args.input_file)
+data = process_alldata(args.input_csv)
 p_data = process_data(data)
-with open(args.output_file,'wb') as file:
+with open(args.output_pkl,'wb') as file:
     pickle.dump(p_data, file)
