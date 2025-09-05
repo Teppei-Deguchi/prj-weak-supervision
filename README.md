@@ -21,4 +21,4 @@ This provides exampel script and dataset for our method. APH(3')II enzymatic act
 This provide a consistent protocol that encompasses ESM-2 zero-shot predictions, Rosetta ddG monomer, and Rosetta flex ddG calculations, leading up to the construction of a sequence-calculated value dataset for ML.
 
 ## Benchmark
-The directory includes scripts and datasets to reproduce the results reported in Deguchi et al. BioRxiv. 2025.
+The directory includes scripts and datasets to reproduce the results reported in [Deguchi et al. BioRxiv. 2025](https://www.biorxiv.org/content/10.1101/2025.04.08.647800v2).
