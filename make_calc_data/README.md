@@ -72,7 +72,12 @@ python3 get_ddGb.py
 The calculated data is added to training experimental dataset. Calculated dataset for data expansion is also generated. Mutational information is converted to amino-acid sequence.
 ~~~
 cd result
-python3 merge_mutantion_data.py --esm2 ESM-2_zero-shot_value.csv --ddgf ddGf_value.csv --ddgb ddGb_value.csv (optional) --wt-seq TYVQALFDFDPQEDGELGFRRGDFIHVMDNSDPNWWKGACHGQTGMFPRNYVTPVN --train_data ../dataset/train_exp.csv
+python3 merge_mutantion_data.py \
+    --esm2 ESM-2_zero-shot_value.csv \
+    --ddgf ddGf_value.csv \
+    --ddgb ddGb_value.csv (optional) \
+    --wt-seq TYVQALFDFDPQEDGELGFRRGDFIHVMDNSDPNWWKGACHGQTGMFPRNYVTPVN \
+    --train_data ../dataset/train_exp.csv
 ~~~
 
 ## Acknowledgement
