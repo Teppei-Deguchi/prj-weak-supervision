@@ -1,5 +1,3 @@
-# Data-efficient protein mutational effect prediction with weak supervision by molecular simulation and protein language models
-
 ## Scripts
 ### 1. Make amino acid embedding
 ~~~
