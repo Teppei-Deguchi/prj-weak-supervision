@@ -2,7 +2,7 @@
 <img width="5760" height="3953" alt="Image" src="https://github.com/user-attachments/assets/a3992a10-a0ee-4f1b-b90c-4b452f42bf53" />
 
 ## Required packages
-The following is the required package and programs
+The following is the required packages and programs
 
 * python (3.10.0)  
 * scikit-learn (1.5.2)  
@@ -15,10 +15,10 @@ The following is the required package and programs
 * scikit-learn-intelex (2025.8.0) (optional) 
 
 ## ML example
-This provides exampel script and dataset for our method. APH(3')II enzymatic activity and GRB2-SH3 binding affinity dataset is available.
+The directory contains example scripts for users to perform machine learning combining their experimental data and weak training data prepared by the protocol given in make_calc_data directory below.
 
 ## make_calc_data
-This provide a consistent protocol that encompasses ESM-2 zero-shot predictions, Rosetta ddG monomer, and Rosetta flex ddG calculations, leading up to the construction of a sequence-calculated value dataset for ML.
+The directory contains example scripts for preparing weak training data using Rosetta and ESM-2 zero-shot prediction.
 
 ## Benchmark
-The directory includes scripts and datasets to reproduce the results reported in [Deguchi et al. BioRxiv. 2025](https://www.biorxiv.org/content/10.1101/2025.04.08.647800v2).
+The directory contains scripts and datasets to reproduce the results reported in [Deguchi et al. BioRxiv. 2025](https://www.biorxiv.org/content/10.1101/2025.04.08.647800v2).
