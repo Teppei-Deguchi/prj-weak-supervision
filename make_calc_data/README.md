@@ -1,7 +1,7 @@
 # Make calculated data
 
 ## 1.Make mutation data file
-Firstly, following commnad will generate all saturation mutations. Mutational data for test data can be excluded if you have. The mutation data will used following steps.
+Firstly, following commnad will generate all saturation mutations. Mutational data for test data can be excluded if you have. The mutation data will be used following steps.
 ~~~
 cd dataset
 python make_mut_data.py \
