@@ -37,7 +37,7 @@ bash ./convert_to_cst_file.sh cstmin.log > ca_dist_restraints.cst
 sed -E '/^AtomPair[[:space:]]+CA[[:space:]]+[0-9]+[[:space:]]+CA[[:space:]]+[0-9]+[[:space:]]+HARMONIC[[:space:]]+-?[0-9]+(\.[0-9]+)?[[:space:]]+-?[0-9]+(\.[0-9]+)?$/!d' \
   ca_dist_restraints.cst > ca_dist_restraints_clean.cst
 ~~~
-Run [ddG monomer](https://docs.rosettacommons.org/docs/latest/application_documentation/analysis/ddg-monomer) calculation. Use energy minimized structure. High or Low resolution protocol is defined by --select_protocol. Set ROSETTA_PATH variable in run_ddgmonomer_parallel.py beforehand. 
+Run [ddG monomer](https://docs.rosettacommons.org/docs/latest/application_documentation/analysis/ddg-monomer) calculation. Use energy minimized structure. High or Low resolution protocol is defined by --select_protocol.
 ~~~
 python3 run_ddgmonomer_parallel.py \
     --input_file ../dataset/mutation.csv \
