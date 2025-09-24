@@ -6,10 +6,10 @@ from run_example import flex_ddg
 from analyze_flex_ddG import ddg_analysis
 
 parser = argparse.ArgumentParser(description='Command line argument examples')
-parser.add_argument('--input_file', type=str)
-parser.add_argument('--pdb', type=str)
-parser.add_argument('--target_chain', type=str)
-parser.add_argument('--rosetta_path', type=str)
+parser.add_argument('--input_file', type=str,help="input mutational information file")
+parser.add_argument('--pdb', type=str,help="input pdb file")
+parser.add_argument('--target_chain', type=str,help="chain to calculate energy")
+parser.add_argument('--rosetta_path', type=str,help="set rosett path")
 args = parser.parse_args()
 
 input_file = args.input_file
