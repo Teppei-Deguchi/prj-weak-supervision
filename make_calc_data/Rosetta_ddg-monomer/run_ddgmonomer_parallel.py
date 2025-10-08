@@ -18,7 +18,7 @@ ROSETTA_PATH = args.rosetta_path
 
 pdb_file = curr_dir + "/" + minimized_pdb
 cst_file = curr_dir + "/ca_dist_restraints_clean.cst"
-ddg_exec = ROSETTA_PATH + "/main/source/bin/ddg_monomer.static.linuxgccrelease"
+ddg_exec = ROSETTA_PATH + "/main/source/bin/ddg_monomer.linuxgccrelease"
 mut_csv = curr_dir + "/" + input_file
 nstruct = 50
 cores = 32
