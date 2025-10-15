@@ -21,4 +21,4 @@ The directory contains example scripts for users to perform machine learning com
 The directory contains example scripts for preparing weak training data using Rosetta and ESM-2 zero-shot prediction.
 
 ## Benchmark
-The directory contains scripts and datasets to reproduce the results reported in [Deguchi et al. BioRxiv. 2025](https://www.biorxiv.org/content/10.1101/2025.04.08.647800v2).
+The directory contains scripts and datasets to reproduce the results reported in [Deguchi et al. Briefings in Bioinformatics. 2025](https://doi.org/10.1093/bib/bbaf536).
