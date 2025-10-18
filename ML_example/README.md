@@ -19,7 +19,7 @@ done
 ### 3. Conduct ML calculation
 Main ML calculation can be done by following command. If you have experimental data for test data, and want to evaluate model accuracy, set eval_testdata=yes. Sequence-activity dataset file like dataset_**/test.csv is required.
 ~~~
-python3 example_activity.py  --res_number protein_residue_length --model_type model_type(svr or rfr) --C float(if model_type=svr) --epsilon float(if model_type=svr) --gamma float(if model_type=svr) --n_estimaters int(if model_type=rfr) --metric metric --sequence_embedding embedding_directory --dataset_dir dataset_directory --calc_mode calculation mode (rosetta, esm2, or hybrid) --eval_testdata (yes or no)
+python3 run_ML.py  --res_number protein_residue_length --model_type model_type(svr or rfr) --C float(if model_type=svr) --epsilon float(if model_type=svr) --gamma float(if model_type=svr) --n_estimaters int(if model_type=rfr) --metric metric --sequence_embedding embedding_directory --dataset_dir dataset_directory --calc_mode calculation mode (rosetta, esm2, or hybrid) --eval_testdata (yes or no)
 
 (example enzymatic activity) python3 run_ML.py  --res_number 255 --model_type svr --C 1 --epsilon 1e-06 --gamma 1e-06 --metric spearman --sequence_embedding embedding --dataset_dir dataset_activity --calc_mode hybrid --PPI no --eval_testdata yes
 (example PPB) python3 run_ML.py  --res_number 56 --model_type svr --C 1000 --epsilon 0.0001 --gamma 0.0001 --metric spearman --sequence_embedding embedding --dataset_dir dataset_PPB --calc_mode hybrid --PPI yes --eval_testdata yes
