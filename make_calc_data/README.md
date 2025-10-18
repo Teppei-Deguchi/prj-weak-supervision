@@ -50,7 +50,7 @@ Collect ddGf values from result files.
 python3 get_ddGf.py
 ~~~
 
-## 4.Rosetta Flex ddG calculation (Protien-Protein Binding)
+## 4.Rosetta Flex ddG calculation (Protein-Protein Binding)
 Protien-Protein Binding free energy calcualtion with Roestta [Flex ddG](https://github.com/Kortemme-Lab/flex_ddG_tutorial). Complex structure is required on pdb/. The residue numbering in the PDB file must start from 1.
 ~~~
 cd Rosetta_flex-ddg
