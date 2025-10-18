@@ -63,7 +63,7 @@ python3 run_flexddg.py　\
     --target_chain A \
     --rosetta_path ROSETTA_PATH
 ~~~
-Collect ddGf values from result files.
+Collect ddGb values from result files.
 ~~~
 python3 get_ddGb.py
 ~~~
