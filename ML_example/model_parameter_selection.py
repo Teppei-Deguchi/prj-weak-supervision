@@ -1,15 +1,12 @@
 import os
-"""
-os.environ["OMP_NUM_THREADS"] = "1"
-os.environ["MKL_NUM_THREADS"] = "1"
-os.environ["NUMEXPR_NUM_THREADS"] = "1"
-"""
 import pickle
 import pandas as pd
 import numpy as np
 from scipy.stats import spearmanr
+"""　#optimization library for intel CPU (if required)
 from sklearnex import patch_sklearn,config_context
 patch_sklearn()
+"""
 from sklearn.model_selection import KFold, GridSearchCV, cross_val_score
 from sklearn.linear_model import LinearRegression
 from sklearn.gaussian_process import GaussianProcessRegressor
