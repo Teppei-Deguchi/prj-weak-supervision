@@ -26,3 +26,8 @@ python3 run_ML.py  --res_number protein_residue_length --model_type model_type(s
 
 ~~~
 
+#### Auxiliary Script
+Model and parameter optimization script. Please modify the script as needed before use.
+~~~
+python3 model_parameter_selection.py --exp_data dataset_**/train_exp.csv --embedding embedding/train_exp.pkl
+~~~
